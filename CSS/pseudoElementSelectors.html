@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <style>
+            /*First Letter Pseudo Element*/
+            
+            /* p::first-letter{
+                color: red;
+                font-size: 50px;
+            } */
+           
+            /*First Line Pseudo Element*/
+            
+            /* p::first-line{
+                background-color: yellow;
+            } */
+           
+             /*Marker Pseudo Element*/
+            ::marker{
+                color: teal;
+            }
+             /*Placeholder Pseudo Element*/
+            /* ::placeholder{
+                background-color: turquoise;
+            } */
+             /*Selection Pseudo Element*/
+            .select::selection{
+                background-color: yellow;
+            }
+            /*Before/After Pseudo Element*/
+            .before-after ::after{
+                content: " Suffix ";
+            }
+            .before-after ::before{
+                content: " Prefix ";
+            }
+
+            
+        </style>
+
+    </head>
+
+    <body>
+        <!--First Letter/First Line Pseudo Element-->
+        <h1>First Letter/First Line Pseudo Element</h1>
+        <div>
+            <p>This is a paragraph 1</p>
+            <p>This is a paragraph 2</p>
+            <p>This is a paragraph 3</p>
+            <p>This is a paragraph 4</p>
+            <p>Ladakh recorded its highest ever single-day recovery
+                of 56 coronavirus patients, taking the tally of recoveries to 20,487 and bringing down active cases to 94, officials said on Wednesday. Two new cases of COVID-19 pushed the infection tally to 20,788, officials said, adding both the cases were reported from Leh. Of the total active cases in Ladakh, 90 are in Leh and 4 in Kargil, officials said.</p>
+
+        </div>
+
+        <!--Marker Pseudo Element-->
+        <h1>Marker Pseudo Element</h1>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JS</li>
+        </ul>
+        <ol>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JS</li>
+        </ol>
+
+        <!--Placeholder Pseudo Element-->
+        <h1>Placeholder Pseudo Element</h1>
+        With Placeholder:<input type="text" placeholder="I am a PlaceHolder"><br/>
+
+        <!--Selection Pseudo Element-->
+        <h1>Selection Pseudo Element</h1>
+        <p class="select">Try Selecting me!</p>
+
+        <!--Before/After Content-->
+        <h1>Before/After Content</h1>
+        <div class="before-after">
+            <p>Content of Paragraph 1</p>
+        </div>
+    </body>
+</html>

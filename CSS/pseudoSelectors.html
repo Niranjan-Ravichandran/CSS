@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* Checked Psuedo Element*/
+            /* input:checked{
+                height: 50px;
+                 width: 50px;
+            } */
+
+            /* Disabled Psuedo Element*/
+            input:disabled{
+                background-color: gray;
+            }
+            /* Enabled Psuedo Element*/
+            input:enabled{
+                background-color: green;
+            }
+            
+            /* Empty Psuedo Element*/
+            p.emptyParagraph:empty{
+                width: 100px;
+                height: 20px;
+                background-color: gray;
+            }
+           
+            /* First Child Psuedo Element*/
+           p:first-child{
+               background-color: yellow;
+           }
+
+            /* Last Child Psuedo Element*/
+           p:last-child{
+               background-color:lightsalmon;
+           }
+
+           /*First of type Psuedo Element*/
+           h3:first-of-type{
+               background-color: violet;
+           }
+
+             /*Last of type Psuedo Element*/
+             h3:last-of-type{
+               background-color: aquamarine;
+           }
+
+           /*Range Pseduo Element*/
+           input:in-range{
+               background-color:lightgreen;
+           }
+           input:out-of-range{
+               background-color: red;
+           }
+
+            /*Invalid Pseduo Element*/
+            input:invalid{
+               border: 2px solid red;
+           }
+            /*valid Pseduo Element*/
+            /* input:valid{
+                        border: 2px solid green;
+                    } */
+          /*Not Pseduo Element*/
+           .notPseudo :not(p){
+               background-color: blueviolet;
+           }
+
+           /*Nth child Pseduo Element*/
+            /* .nChild p:nth-child(2){
+                background-color: yellowgreen;
+            } */
+
+            /*Nth last child Pseduo Element*/
+            .nChild p:nth-last-child(2){
+                background-color: tomato;
+            }
+
+            /*Nth Type pseudo Element*/
+            .nType p:nth-of-type(2){
+                background-color: tomato;
+            }
+            /*Nth Last Type pseudo Element*/
+            .nType p:nth-last-of-type(3){
+                background-color: yellowgreen;
+            }
+            /*Only Type pseudo Element*/
+            .only-type p:only-of-type{
+                background-color: green;
+            }
+            /*Optional pseudo Element*/
+            /* input:optional{
+                background-color: yellow;
+            } */
+            /*Required pseudo Element*/
+            /* input:required{
+                background-color: wheat;
+            } */
+            /* .nthChild p:nth-child(n) {
+                background-color: yellow;
+            } */
+            /* .nthChild p:nth-child(even){
+                background-color: red;
+            }
+            .nthChild p:nth-child(odd){
+                background-color: green;
+            } */
+            /* .nthChild p:nth-child(4n) {
+                background-color: brown;
+            } */
+            .nthChild p:nth-child(4n-7) {
+                            background-color: gold
+                        }
+        </style>
+        <script>
+            function onClickOfButton(){
+                document.getElementById("disableButton").disabled = !document.getElementById("disableButton").disabled;
+            }
+        </script>
+    </head>
+
+    <body>
+        
+        <h1>Checked Pseudo Element</h1>
+        <input type="checkbox" name="Skills" checked="checked" value="HTML5"> HTML5 <br>
+        <input type="checkbox"  name="Skills"  value="CSS3"> CSS3  <br>
+
+        <!--Disabled pseduo Element-->
+        <h1>Disabled / Enabled Psuedo Element</h1>
+        <input type="button" id="disableButton"  value="Disable Me"><br/>
+        <input type="button" id="toggleButton" onclick="onClickOfButton()" value="Toggle button"><br/>
+        
+        <!--Empty pseduo Element-->
+        <h1>Empty Pseudo Element</h1>
+        <p class="emptyParagraph"></p>
+        <p>A paragraph.</p>
+        <p>Another paragraph.</p>
+
+        <!--First Child/Last Child pseduo Element-->
+        <h1>First Child of Pseudo Element</h1>
+        <p>This paragraph is not the first child of its parent.</p>
+
+        <div>
+        <p>This paragraph is the first child of its parent (div).</p>
+        <p>This paragraph is not the first child of its parent.Last child of the parent (div)</p>
+        </div>
+
+        <!--First of type/Last type of pseudo Element-->
+        <!-- <h1>First of type / Last type of Pseudo Element</h1>
+        <h3>First h3 type Element</h3>
+        <h3>Second/Last type h3 Element</h3> -->
+
+        <!--Range pseudo Element-->
+        <!-- <h1>Range Pseudo Element</h1>
+        Experience:<input type="number" min="5" max="10" >  -->
+
+        <!--invalid/Valid Element pseudo Element-->
+        <!-- <h1>Invalid/Valid Pseudo Element</h1>
+        <input type="email" value=""> -->
+
+        <!--Not pseudo Element-->
+        <!-- <h1>Not Pseudo Element</h1>
+       <div class="notPseudo">
+            <p>I am Paragraph Element</p>
+            <h6>I am not a Paragraph Element</h6>
+       </div> -->
+
+       <!--N Child pseudo Element-->
+        <!-- <h1>N Child Pseudo Element</h1>
+        <div class="nChild">
+            <p>The first paragraph.</p>
+            <p>The second paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The fourth paragraph.</p>
+            <p>The fifth paragraph.</p>
+            <p>The six paragraph.</p>
+            <p>The seven paragraph.</p>
+            <p>The eight paragraph.</p>
+        </div> -->
+
+    <!--N Type pseudo Element-->
+    <!-- <h1>N<sup>th</sup> type  Pseudo Element</h1>
+    <div class="nType">
+        <p>The first paragraph.</p>
+        <p>The second paragraph.</p>
+        <p>The third paragraph.</p>
+        <p>The fourth paragraph.</p>
+        <p>The fifth paragraph.</p>
+        <p>The six paragraph.</p>
+    </div> -->
+
+    <!--Only  Type pseudo Element-->
+    <!-- <h1>Only type Pseudo Element</h1>
+    <div class="only-type">
+        <div>
+            <p>I am the only para inside div</p>
+        </div>
+    
+        <div>
+            <p>I am para one inside div</p>
+            <p>I am para 2 inside div</p>
+        </div>
+    </div> -->
+
+    <!--Required/Optional Pseudo Element-->
+    <!-- <h1>Required/Optional Pseudo Element</h1>
+    First Name Required:<input type="text" required><br/>
+    Last Name Optional:<input type="password" ><br/> -->
+
+
+
+           <!--N th Child pseudo Element-->
+        <div class="nthChild">
+            <h1>N Child Pseudo Element</h1>
+            <div class="nthChild">
+                <p>The first paragraph.</p>
+                <p>The second paragraph.</p>
+                <p>The third paragraph.</p>
+                <p>The fourth paragraph.</p>
+                <p>The fifth paragraph.</p>
+                <p>The six paragraph.</p>
+                <p>The seven paragraph.</p>
+                <p>The eight paragraph.</p>
+            </div>
+        </div>
+    </body>
+
+</html>

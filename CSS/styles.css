@@ -1,0 +1,51 @@
+.color-red{ background-color:red; }
+
+h2{ background-color: tan; }
+
+#emailId{border: 2px solid red;};
+
+*{
+    background-color: red;
+}
+
+/*Type Selector*/
+div{
+    color: red;
+}
+/*Pseudo Element Selector*/
+::selection{
+    background-color: blueviolet;
+}
+
+
+/*Class Selector*/
+.my-class {
+    color: red ;
+  }
+/*Pseudo Class Selector*/
+:hover {
+    color: red;
+  }
+/*Attribute Class Selector*/
+[href='#'] {
+    color: red;
+  }
+
+/*Not Class Selector*/
+div:not(.my-class) {
+    color: red;
+  }
+
+/*ID Selector*/
+#myId{
+    background-color: brown;
+}
+
+
+/*Important Selector*/
+.my-class-important {
+    color: red !important;
+  }
+
+
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           
+           /*Attribute Selectors [attribute]*/
+           /* input[type]{
+               background-color: red;
+           } */
+            /*Attribute Selectors [attribute==value]*/
+            input[type = "password"]{
+                background-color: violet;
+            }
+
+            /*Attribute Selectors [attribute~=value]*/
+            input[placeholder ~= "email"]{
+                background-color: lightgreen;
+            }
+
+            /*Attribute Selectors [attribute|=value]*/
+            p[class |= "para"]{
+                background-color: lightsalmon;
+            }
+
+            /*Attribute Selectors [attribute^=value]*/
+            p[class ^= "para"]{
+                background-color: lightseagreen;
+            }
+
+            /*Attribute Selectors [attribute$=value]*/
+            p[class $= "heading"]{
+                background-color: limegreen;
+            }
+
+            /*Attribute Selectors [attribute*=value]*/
+            p[class *= "text"]{
+                background-color: rgb(178, 184, 107);
+            }
+            
+        </style>
+ </head>
+
+    <body>
+        <!--Attribute Selectors [attribute]-->
+        <h1>Attribute Selectors [attribute]</h1>
+        UserName:<input type="text" >
+
+        <!--Attribute Selectors with value specified [attribute = value]-->
+        <h1>Attribute Selectors with value specified [attribute = value]</h1>
+        <p>Select input tags with type attribute equal to Password</p>
+        Password:<input type="password" >
+
+        <!--Attribute Selectors containing the value [attribute ~= value]-->
+        <h1>Attribute Selectors containing the value [attribute ~= value]</h1>
+        <p>Select input tags with placeholder containing email</p>
+        Email:<input type="email" placeholder="Enter email Address">
+
+        <!--Attribute Selectors starting with the value [attribute |= value]-->
+        <h1>Attribute Selectors starting with the value and hypen [attribute |= value]</h1>
+        <p>Select all elements with class starting with para-</p>
+        <p class="para-one">This is Paragraph 1</p>
+        <p class="para-two">This is Paragraph 2</p>
+        <p class="para-three">This is Paragraph 3</p>
+
+        <!--Attribute Selectors starting with the value [attribute ^= value]-->
+        <h1>Attribute Selectors starting with the value [attribute ^= value]</h1>
+        <p>Select all elements with class starting with para</p>
+        <p class="paraOne">This is Paragraph 1</p>
+        <p class="paraTwo">This is Paragraph 2</p>
+        <p class="paraThree">This is Paragraph 3</p>
+
+        <!--Attribute Selectors ending with the value [attribute $= value]-->
+        <h1>Attribute Selectors ending with the value [attribute $= value]</h1>
+        <p>Select all elements with class ending with heading</p>
+        <p class="main-heading">This is heading 1 with class main-heading</p>
+        <p class="sub-heading">This is heading 2 with class sub-heading</p>
+        <p class="non-heading">This is Paragraph with class non-heading </p>
+
+        <!--Attribute Selectors containing the value anywhere [attribute *= value]-->
+        <h1>Attribute Selectors containing the value anywhere [attribute *= value]</h1>
+        <p>Select all elements with class having text</p>
+        <p class="paratext">P1</p>
+        <p class="textpara">P2</p>
+        <p class="nontextpara">P3</p>
+    </body>
+
+</html>
