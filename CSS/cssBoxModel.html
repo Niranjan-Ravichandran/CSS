@@ -2,9 +2,9 @@
 <html>
     <head>
         <style>
-            body{
+            /* body{
                 margin: 0;
-            }
+            } */
             .without-border-box{
                 border: 2px solid red;
                 margin: 10px;
@@ -21,11 +21,18 @@
                 height: 200px;
                 box-sizing: border-box;
             }
-            
+            .box{
+                margin: 0;
+                padding: 0;
+                border: 0;
+            }
           
         </style>
     </head>
     <body>
+        <h1 >CSS Box Model</h1>
+        <h1 class="box">CSS Box Model</h1>
+
         <h1 class="without-border-box">Box Model without border box</h1>
         <h1 class="with-border-box">Box Model with border box</h1>
 

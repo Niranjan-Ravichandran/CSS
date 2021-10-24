@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .box{
+                width: 200px;
+                height: 250px;
+                background-color: red;
+                padding: 50px;
+                font-size: 40px;
+                margin: 50px;
+            }
+            .box-without-transition:hover,.box-with-transition:hover,.box-with-transition-delay:hover, .box-with-transition-duration:hover
+            ,.box-with-transition-ease:hover,.box-with-transition-ease-in:hover,.box-with-transition-ease-out:hover
+            ,.box-with-transition-ease-in-out:hover,.box-with-transition-linear:hover
+            ,.box-with-transition-cubic-bezier:hover,.box-with-transition-shorthand:hover{
+                width: 500px;
+            }
+            .box-with-transition{
+                transition-property: width;
+            }
+           
+            .box-with-transition-delay{
+                transition-property: width;
+                transition-delay: 1s;
+            }
+            
+            .box-with-transition-duration{
+                transition-property: width;
+                transition-duration: 2s;           
+            }
+            .box-with-transition-ease{
+                transition-property: width;
+                transition-duration: 2s;
+                transition-timing-function: ease;
+            }
+            .box-with-transition-ease-in{
+                transition-property: width;
+                transition-duration: 2s;
+                transition-timing-function: ease-in;
+            }
+            .box-with-transition-ease-out{
+                transition-property: width;
+                transition-duration: 2s;
+                transition-timing-function: ease-out;
+            }
+            .box-with-transition-ease-in-out{
+                transition-property: width;
+                transition-duration: 2s;
+                transition-timing-function: ease-in-out
+            }
+            .box-with-transition-linear{
+                transition-property: width;
+                transition-duration: 2s;
+                transition-timing-function: linear
+            }
+            .box-with-transition-cubic-bezier{
+                transition-property: width;
+                transition-duration: 2s;
+                transition-timing-function: cubic-bezier(.23,.84,1,-0.04);
+            }
+            .box-with-transition-shorthand{
+
+                transition: width 1s 1s ease-in;
+                /*transition-property transition-duration transition-delay transition-timing-function*/
+
+            }
+
+        </style>
+       
+    </head>
+
+    <body>
+        
+        <div class="box box-without-transition">Box Without Transaction</div>
+        <div class="box box-with-transition">Box With Transaction</div>
+        <div class="box box-with-transition-delay">Box With Transaction Delay</div>
+        <div class="box box-with-transition-duration">Box With Transaction Duration</div>
+
+        <div class="box box-with-transition-ease">Box With Transaction Timing Function Ease</div>
+        <div class="box box-with-transition-ease-in">Box With Transaction Timing Function Ease In</div>
+        <div class="box box-with-transition-ease-out">Box With Transaction Timing Function Ease Out</div>
+        <div class="box box-with-transition-ease-in-out">Box With Transaction Timing Function Ease In Out</div>
+
+        <div class="box box-with-transition-linear">Box With Transaction Timing Function Linear</div>
+        <div class="box  box-with-transition-cubic-bezier"> Box-with-transition-cubic-bezier</div>
+        <div class="box box-with-transition-shorthand">Box With Transaction Shorthand</div>
+
+        
+    </body>
+
+</html>

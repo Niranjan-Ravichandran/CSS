@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     
+        <style>
+            .box{
+                width: 400px;
+                height: 200px;
+                background-color: yellow;
+                font-size: 60px;
+                color: white;
+                text-align: center;
+                margin: 50px auto;
+                padding-top: 55px;
+                box-sizing: border-box;
+                transition: transform 1s;
+            }
+            .box-translateX:hover{
+                transform: translateX(200px);
+            }
+            .box-translateY:hover{
+                transform: translateY(200px);
+            }
+            
+            .box-translateXY:hover{
+                transform: translate(200px,200px);
+            }
+            .box-rotate-clockwise:hover{
+                transform: rotate(90deg);
+            }
+            .box-rotate-anti-clockwise:hover{
+                transform: rotate(-90deg);
+            }
+            .box-scaleX:hover{
+                transform: scaleX(2);
+            }
+            .box-scaleY:hover{
+                transform: scaleY(2);
+            }
+            .box-scale:hover{
+                transform: scale(2,2);
+            }
+            .box-skewX:hover{
+                transform: skewX(20deg);
+            }
+            .box-skewY:hover{
+                transform: skewY(20deg);
+            }
+            .box-skewXY:hover{
+                transform: skew(20deg,20deg);
+            }
+            .box-rotate-z:hover{
+                transform: rotateZ(20deg)
+            }
+           
+        </style>
+    </head>
+
+    <body>
+       <div class="box">Simple Box </div>
+       <div class="box box-translateX">Box Translate X</div>
+       <div class="box box-translateY">Box Translate Y</div>
+       <div class="box box-translateXY">Box Translate X and Y</div>
+       <div class="box box-rotate-clockwise">Box Rotate Clockwise</div>
+       <div class="box box-rotate-anti-clockwise">Box Rotate Anti Clockwise</div>
+
+       <div class="box box-scaleX">Box Scale X</div>
+       <div class="box box-scaleY">Box Scale Y</div>
+       <div class="box box-scale">Box Scale X Y</div>
+
+
+       <div class="box box-skewX">Box Skew X</div>
+       <div class="box box-skewY">Box Skew Y</div>
+       <div class="box box-skewXY">Box Skew XY</div>
+
+
+       <div class="box box-rotate-z">Box Rotate Z</div>
+       
+    </body>
+
+</html>>

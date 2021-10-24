@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .gradient{
+                width: 700px;
+                height: 200px;
+                border: 5px solid red;
+                margin: 100px auto;
+
+                background-image: linear-gradient(yellow,green);
+
+                
+            }
+            .to-right{
+                background-image: linear-gradient(to right,yellow,green);
+            }
+            .to-left{
+                background-image: linear-gradient(to left,yellow,green);
+            }
+            .to-top{
+                background-image: linear-gradient(to top,yellow);
+            }
+            .to-left-bottom{
+                background-image: linear-gradient(to left bottom,yellow,green);
+            }
+            .to-right-bottom{
+                background-image: linear-gradient(to right bottom,yellow,green);
+            }
+            .same-color{
+                background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(255,0,0,1));
+            }
+            .multiple-colors{
+                background-image: linear-gradient(yellow,green,red);
+            }
+            div{
+                text-align: center;
+                color: white;
+                font-size: 30px;
+                padding-top: 100px;
+            }
+            
+            
+        </style>
+    </head>
+
+    <body>
+       <div class="gradient"> background-image: linear-gradient(yellow,green);</div>
+       <div class="gradient to-right">  background-image: linear-gradient(to right,yellow,green);</div>
+       <div class="gradient to-left"> background-image: linear-gradient(to left,yellow,green);</div>
+       <div class="gradient to-top"> background-image: linear-gradient(to top,yellow,green);</div>
+       <div class="gradient to-left-bottom">background-image: linear-gradient(to left bottom,yellow,green,red);</div>
+       <div class="gradient to-right-bottom">  background-image: linear-gradient(to right bottom,yellow,green);</div>
+       <div class="gradient same-color">background-image: linear-gradient(rgba(255,0,0,0), rgba(255,0,0,1));</div>
+       <div class="gradient multiple-colors"> background-image: linear-gradient(yellow,green,red);</div>
+
+    </body>
+
+</html>

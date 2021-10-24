@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .border{
+                border:3px solid black;
+            }
+            .border th{
+                border:3px solid red;
+            }
+            .border td{
+                border:3px solid green;
+            }
+            .border-collapse{
+                border-collapse: collapse;
+            }
+            .border-seperate{
+                border-collapse: separate;
+            }
+            .border-spacing {
+                border-spacing: 15px;
+            }
+            .caption-top{
+                caption-side: top;
+            }
+            .caption-bottom{
+                caption-side: bottom;
+            }
+            .empty-cells{
+                /* empty-cells: show; */
+                empty-cells: hide;
+            }
+        </style>       
+    </head>
+
+    <body>
+        <!--border-collapse: collapse-->
+        <h1>Border Collapse : collapse</h1>
+        <table class="border border-collapse">
+            <caption>border-collapse: collapse</caption>
+            <thead>
+                <th>Back-end JS </th>
+                <th>Front-end JS </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Node</td>
+                    <td>React</td>
+                </tr>
+                <tr>
+                    <td>Express</td>
+                    <td>Angular</td>
+                </tr>
+                </tbody>
+         </table> 
+
+         <!--Border Collapse Seperate-->
+         <h1>Border Collapse : Seperate</h1>
+        <table class="border border-seperate">
+            <caption>border-collapse: Seperate</caption>
+            <thead>
+                <th>Back-end JS </th>
+                <th>Front-end JS </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Node</td>
+                    <td>React</td>
+                </tr>
+                <tr>
+                    <td>Express</td>
+                    <td>Angular</td>
+                </tr>
+                </tbody>
+         </table> 
+
+          <!--Border Spacing-->
+         <h1>Border Spacing</h1>
+        <table class="border border-spacing">
+            <caption>border-spacing</caption>
+            <thead>
+                <th>Back-end JS </th>
+                <th>Front-end JS </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Node</td>
+                    <td>React</td>
+                </tr>
+                <tr>
+                    <td>Express</td>
+                    <td>Angular</td>
+                </tr>
+                </tbody>
+         </table> 
+
+        <!--Caption Spacing-->
+        <h1>Border Caption</h1>
+        <table class="border border-spacing caption-top">
+            <caption>caption-side: top</caption>
+            <thead>
+                <th>Back-end JS </th>
+                <th>Front-end JS </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Node</td>
+                    <td>React</td>
+                </tr>
+                <tr>
+                    <td>Express</td>
+                    <td>Angular</td>
+                </tr>
+                </tbody>
+        </table> 
+
+        <!--Caption Spacing-->
+        <h1>Border Caption</h1>
+        <table class="border border-spacing caption-bottom">
+            <caption>caption-side: bottom</caption>
+            <thead>
+                <th>Back-end JS </th>
+                <th>Front-end JS </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Node</td>
+                    <td>React</td>
+                </tr>
+                <tr>
+                    <td>Express</td>
+                    <td>Angular</td>
+                </tr>
+                </tbody>
+        </table> 
+
+        <h1>Empty Cells</h1>
+        <table class="border border-spacing empty-cells">
+            <caption>Empty Cells</caption>
+            <thead>
+                <th>Back-end JS </th>
+                <th>Front-end JS </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td>React</td>
+                </tr>
+                <tr>
+                    <td>Express</td>
+                    <td>Angular</td>
+                </tr>
+                </tbody>
+        </table> 
+          
+        
+    </body>
+
+</html>

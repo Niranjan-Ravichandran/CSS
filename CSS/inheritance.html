@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           
+            /* body{
+                font-size: 30px;
+            } */
+            .font-size-24px{
+                font-size: 24px;
+            }
+            .font-size-18px{
+                font-size: 18px;
+            }
+
+            /*Inherit*/
+            .font-size-inherit{
+                font-size: inherit;
+            }
+             /*Initial*/
+            .font-size-initial{
+                font-size: initial;
+            }
+            /*Unset*/
+            .font-size-unset{
+                font-size: unset;
+            }
+
+            /*Border*/
+            .apply-border{
+                border: 5px solid red;
+            }
+
+            .apply-border-inherit{
+                border: inherit;
+            }
+            .apply-border-initial{
+                border: initial;
+            }
+            .apply-border-unset{
+                border: unset;
+            }
+        </style>       
+    </head>
+
+    <body>
+        <!--Default 2em font size-->
+        <!--Change font size in body and see if they inherit-->
+        <!-- <h1>Inherited Properties</h1> -->
+        <!--Inherited-->
+        <!-- <p>Default paragraph with no CSS</p>
+        <div class="font-size-24px">
+            <p>I inherited font size from Div</p>
+            <p class="font-size-18px">I don't inherit font size from Div</p>
+            <p class="font-size-inherit">I am using inherit keyword</p>
+            <p class="font-size-initial">I am using initial keyword</p>
+            <p class="font-size-unset">I am using unset keyword</p>
+        </div> -->
+
+        <!--Non Inherited-->
+        <h1>Non inherited Properties</h1>
+        <div class="apply-border"> I am a div with border
+            <div>I am also a div without border</div>
+            <p >I don't inherit border from Div</p>
+            <p class="apply-border-inherit">I am using inherit keyword</p>
+            <p class="apply-border-initial">I am using initial keyword</p>
+            <p class="apply-border-unset">I am using unset keyword</p>
+        </div>
+        <p>Default paragraph with no CSS</p>
+    </body>
+
+</html>
